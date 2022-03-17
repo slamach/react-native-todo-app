@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "react-native-todo-app",
+    "name": "To Do (React Native)",
+    "description": "To Do - React Native learning project",
     "slug": "react-native-todo-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,16 +18,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     }
   }
 }
