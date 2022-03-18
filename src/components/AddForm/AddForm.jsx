@@ -3,7 +3,6 @@ import {
   KeyboardAvoidingView,
   TextInput,
   Pressable,
-  Text,
   Platform,
 } from 'react-native';
 import { styles } from './AddFormStyles';
@@ -28,7 +27,7 @@ const AddForm = (props) => {
         style={styles.inputField}
         value={currentValue}
         onChangeText={setCurrentValue}
-        placeholder="I want to do..."
+        placeholder="I want to..."
         onSubmitEditing={submitForm}
       />
       <Pressable style={styles.addButton} onPress={submitForm}>

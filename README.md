@@ -15,7 +15,6 @@ Create tasks and mark them as done.
 - Redux Toolkit
 - Redux Persist
 - Husky
-- Lint Staged
 - Prettier
 
 ## Getting started
@@ -27,7 +26,7 @@ To enable pre-commit hook you need to run `npm install` already in git repositor
 
 If you initialize git repostitory after installing, additionally run `npm run prepare`.
 
-### Development
+### Run Expo
 ```
 npm start
 ```
