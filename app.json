@@ -25,6 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
-    }
+    },
+    "githubUrl": "https://github.com/slamach/react-native-todo-app"
   }
 }

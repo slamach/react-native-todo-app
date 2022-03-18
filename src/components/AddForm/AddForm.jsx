@@ -1,5 +1,13 @@
 import { useState } from 'react';
-import { View, TextInput, Button } from 'react-native';
+import {
+  KeyboardAvoidingView,
+  TextInput,
+  Pressable,
+  Text,
+  Platform,
+} from 'react-native';
+import { styles } from './AddFormStyles';
+import AddIcon from '../../assets/addIcon.svg';
 
 const AddForm = (props) => {
   const [currentValue, setCurrentValue] = useState('');
@@ -12,14 +20,21 @@ const AddForm = (props) => {
   };
 
   return (
-    <View>
+    <KeyboardAvoidingView
+      style={styles.addFormContainer}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+    >
       <TextInput
+        style={styles.inputField}
         value={currentValue}
         onChangeText={setCurrentValue}
-        placeholder="Your task..."
+        placeholder="I want to do..."
+        onSubmitEditing={submitForm}
       />
-      <Button title="Add" onPress={submitForm} />
-    </View>
+      <Pressable style={styles.addButton} onPress={submitForm}>
+        <AddIcon height={18} />
+      </Pressable>
+    </KeyboardAvoidingView>
   );
 };
 

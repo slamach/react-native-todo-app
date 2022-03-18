@@ -4,23 +4,7 @@ const appSlice = createSlice({
   name: 'app',
   initialState: {
     currentId: 4,
-    todos: [
-      {
-        id: 1,
-        text: 'Item 1',
-        state: 'todo',
-      },
-      {
-        id: 2,
-        text: 'Item 2',
-        state: 'todo',
-      },
-      {
-        id: 3,
-        text: 'Item 3',
-        state: 'done',
-      },
-    ],
+    todos: [],
   },
   reducers: {
     addTodo: (state, action) => {
@@ -36,8 +20,14 @@ const appSlice = createSlice({
         state.todos[item].state === 'todo' ? 'done' : 'todo';
       state.todos.push(state.todos.splice(item, 1)[0]);
     },
+    trashTodo: (state, action) => {
+      const item = state.todos.findIndex((item) => item.id === action.payload);
+      if (item > -1) {
+        state.todos.splice(item, 1);
+      }
+    },
   },
 });
 
 export default appSlice.reducer;
-export const { addTodo, changeTodoState } = appSlice.actions;
+export const { addTodo, changeTodoState, trashTodo } = appSlice.actions;

@@ -7,8 +7,8 @@ import App from './components/AppContainer';
 
 registerRootComponent(() => (
   <Provider store={store}>
-    {/* <PersistGate loading={null} persistor={persistor}> */}
-    <App />
-    {/* </PersistGate> */}
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
   </Provider>
 ));
