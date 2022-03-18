@@ -1,9 +1,11 @@
 # To Do (React Native)
 
-<img src="doc/screenshot.png" width="300" style="display: block; margin: 0 auto;" alt="App Screenshot">
+<p align="center">
+  <img src="doc/screenshot.png" width="300" alt="App Screenshot">
+</p>
 
 ## About
-React Native learning project. 
+React Native learning project.  
 Create tasks and mark them as done.
 
 ### Technologies
