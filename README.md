@@ -4,11 +4,11 @@
   <img src="doc/screenshot.png" width="300" alt="App Screenshot">
 </p>
 
-## About
+## About the Project
 React Native learning project.  
 Create tasks and mark them as done.
 
-### Technologies
+### Built With
 - Expo
 - React Native
 - Redux
@@ -17,16 +17,15 @@ Create tasks and mark them as done.
 - Husky
 - Prettier
 
-## Getting started
+## Installation and Usage
 ```
 npm install
 ```
 
-To enable pre-commit hook you need to run `npm install` already in git repository.
+To make the pre-commit hook work, you need to run `npm install` when the project is already initialized as a Git repository.
 
-If you initialize git repostitory after installing, additionally run `npm run prepare`.
+If the project is initialized as a repository later, you need to additionally execute `npm run prepare`.
 
-### Run Expo
 ```
 npm start
 ```
