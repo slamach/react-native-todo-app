@@ -5,8 +5,7 @@
 </p>
 
 ## About the Project
-React Native learning project.  
-Create tasks and mark them as done.
+React Native To Do application created for learning purposes.
 
 ### Built With
 - Expo
