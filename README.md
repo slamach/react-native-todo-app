@@ -5,11 +5,13 @@
 </p>
 
 ## About the Project
+
 React Native To Do application created for learning purposes.
 
 You can add tasks, delete them and mark as done.
 
 ### Built With
+
 - Expo
 - React Native
 - Redux
@@ -19,6 +21,7 @@ You can add tasks, delete them and mark as done.
 - Prettier
 
 ## Installation and Usage
+
 ```
 npm install
 ```
@@ -32,6 +35,7 @@ npm start
 ```
 
 ## Contact
-Dmitry Sviridov  
+
+Dmitrii Sviridov  
 Telegram: [slamach](https://t.me/slamach)  
 Email: sviridov.dvv@gmail.com
